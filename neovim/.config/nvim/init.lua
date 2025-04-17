@@ -16,4 +16,4 @@ if not pcall(require, "lazy") then
 end
 
 require "lazy_setup"
-require "user.clipboard"
+require "polish"
