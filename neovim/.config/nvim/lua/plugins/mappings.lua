@@ -8,6 +8,8 @@ return {
         i = {
           ["<C-h>"] = { "<C-w>", desc = "Delete previous word" }, -- <C-h> equal <C-BS> in WSL
           ["<C-j>"] = { "<Esc>o", desc = "Insert new line below from insert mode" }, -- <C-j> equal <C-CR> in WSL
+          ["<C-BS>"] = { "<C-w>", desc = "Delete previous word" },
+          ["<C-CR>"] = { "<Esc>o", desc = "Insert new line below from insert mode" },
         },
       },
     },
