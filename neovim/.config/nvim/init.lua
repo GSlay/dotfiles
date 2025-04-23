@@ -15,12 +15,5 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
--- MY INIT
--- tabspaces
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-vim.opt.softtabstop = 2
-
 require "lazy_setup"
 require "polish"
