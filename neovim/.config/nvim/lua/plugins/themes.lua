@@ -3,7 +3,7 @@ return {
     "AstroNvim/astroui",
     ---@type AstroUIOpts
     opts = {
-      colorscheme = "evangelion",
+      colorscheme = "tokyonight-moon",
     },
   },
   {
@@ -23,6 +23,12 @@ return {
       },
     },
     init = function() end,
+  },
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
   {
     "maxmx03/dracula.nvim",
