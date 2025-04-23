@@ -5,7 +5,7 @@ return {
     opts = {
       options = {
         -- this is all you need
-        theme = "evangelion",
+        theme = "auto",
 
         -- everything below
         -- is extra style
