@@ -3,21 +3,21 @@ return {
     "AstroNvim/astroui",
     ---@type AstroUIOpts
     opts = {
-      colorscheme = "tokyonight-storm",
+      colorscheme = "evangelion",
     },
-    init = function()
-      local colorschemes = {
-        "evangelion",
-        "astromars",
-        "tokyonight-storm",
-        "elflord",
-        "miasma",
-        "dracula",
-      }
-      math.randomseed(os.time())
-      local random_colorscheme = colorschemes[math.random(#colorschemes)]
-      vim.cmd("colorscheme " .. random_colorscheme)
-    end,
+    -- init = function()
+    --   local colorschemes = {
+    --     "evangelion",
+    --     "astromars",
+    --     "tokyonight-storm",
+    --     "elflord",
+    --     "miasma",
+    --     "dracula",
+    --   }
+    --   math.randomseed(os.time())
+    --   local random_colorscheme = colorschemes[math.random(#colorschemes)]
+    --   vim.cmd("colorscheme " .. random_colorscheme)
+    -- end,
   },
   {
     "xero/miasma.nvim",
