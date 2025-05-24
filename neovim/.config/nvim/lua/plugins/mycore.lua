@@ -18,7 +18,7 @@ return {
     config = function()
       -- Create an autocommand that triggers specifically for Python files
       vim.api.nvim_create_autocmd("FileType", {
-        pattern = "python", -- Apply this to files with filetype 'python'
+        pattern = { "python", "rust" }, -- Apply this to files with filetype 'python'
         callback = function()
           -- Set local options for the current buffer
           vim.opt_local.tabstop = 2
