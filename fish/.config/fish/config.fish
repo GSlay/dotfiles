@@ -1,3 +1,6 @@
+# fish_add_path /home/uslay/.local/bin
+# oh-my-posh init fish --config ~/.poshthemes/kanagawa.omp.json | source
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     bind \t accept-autosuggestion
