@@ -4,16 +4,26 @@ return {
     event = "VeryLazy",
     opts = {
       options = {
-        -- this is all you need
         theme = "auto",
-
-        -- everything below
-        -- is extra style
-        -- can't help myself :P
         component_separators = { left = "░", right = "░" },
         section_separators = { left = "▓▒░", right = "░▒▓" },
       },
       sections = {
+        -- Add a custom function to lualine_a to show macro recording status
+        lualine_a = {
+          { "mode", separator = { right = "░▒▓" } },
+          {
+            function()
+              local recording_reg = vim.fn.reg_recording()
+              if recording_reg ~= "" then
+                return " @" .. recording_reg
+              end
+              return ""
+            end,
+            -- Add a `color` property to make the text stand out
+            color = { fg = "#ff0000", bg = "#151515", gui = "bold" },
+          },
+        },
         lualine_b = {
           "branch",
           {
