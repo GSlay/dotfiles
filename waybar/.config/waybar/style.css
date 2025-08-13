@@ -1,0 +1,184 @@
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono Nerd Font, Font Awesome, "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 14px;
+  min-height: 0;
+}
+
+
+/* Kanagawa color palette */
+@define-color sumiInk1 #1F1F28;
+@define-color sumiInk2 #2A2A37;
+@define-color sumiInk3 #363646;
+@define-color fujiWhite #DCD7BA;
+@define-color oldWhite #C8C093;
+@define-color dragonRed #C34043;
+@define-color roninYellow #FF9E3B;
+@define-color oniViolet #957FB8;
+@define-color crystalBlue #769EAF;
+@define-color crystalBlue2 #4E7B98;
+@define-color autumnGreen #799F73;
+@define-color autumnRed #986F69;
+@define-color autumnYellow #9B9858;
+@define-color samuraiRed #E46876;
+@define-color waveBlue1 #223249;
+@define-color waveBlue2 #2D4F67;
+
+window#waybar {
+  background: transparent;
+  color: @fujiWhite;
+}
+
+#workspaces {
+  background-color: @sumiInk2;
+  margin: 5px;
+  margin-left: 6px;
+  border-radius: 5px;
+}
+
+#workspaces button {
+  padding: 2px 8px;
+  color: @fujiWhite;
+}
+
+#workspaces button.focused {
+  color: @sumiInk1;
+  background-color: @oniViolet;
+  border-radius: 5px;
+}
+
+#workspaces button:hover {
+  background-color: @waveBlue2;
+  color: @sumiInk1;
+  border-radius: 5px;
+}
+
+#custom-date,
+#clock,
+#battery,
+#pulseaudio,
+#network {
+  background-color: @sumiInk2;
+  padding: 2px 10px;
+  margin: 5px 0px;
+}
+
+#custom-date {
+  color: @crystalBlue;
+}
+
+#custom-power {
+  color: @sumiInk1;
+  background-color: @dragonRed;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  padding: 3px 10px;
+}
+
+#clock {
+  color: @oniViolet;
+  border-radius: 0px 5px 5px 0px;
+  margin-right: 6px;
+}
+
+#battery {
+  color: @autumnGreen;
+}
+
+#battery.charging {
+  color: @roninYellow;
+}
+
+#battery.warning:not(.charging) {
+  background-color: @samuraiRed;
+  color: @sumiInk1;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#network {
+  color: @autumnGreen;
+  border-radius: 5px 0px 0px 5px;
+}
+
+#pulseaudio {
+  color: @crystalBlue;
+}
+
+#temperature {
+  background-color: @sumiInk2;
+  margin: 5px 0;
+  padding: 0 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: @crystalBlue;
+}
+
+#disk {
+  color: @autumnGreen;
+  margin: 5px 0;
+  padding-right: 10px;
+  background-color: @sumiInk2;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 3px;
+}
+
+#memory {
+  margin-left: 5px;
+  background: @sumiInk3;
+  margin: 5px 0;
+  padding: 0 10px;
+  margin-left: 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: @roninYellow;
+}
+
+#cpu {
+  margin: 5px 0;
+  padding: 0 10px;
+  background-color: @sumiInk3;
+  color: @roninYellow;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 6px;
+}
+
+#tray,
+#bluetooth,
+#custom-weather,
+#custom-help,
+#custom-wlsunset,
+#custom-clipboard,
+#custom-playerctl,
+#custom-dnd,
+#custom-menu,
+#idle_inhibitor,
+#language {
+  background-color: @sumiInk2;
+  margin: 5px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+#tray {
+  background-color: @waveBlue1;
+  margin: 5px;
+  margin-left: 0px;
+  margin-right: 6px;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+#tray > * {
+  padding: 0 2px;
+  margin: 0 2px;
+}
