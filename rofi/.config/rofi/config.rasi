@@ -1,0 +1,164 @@
+/**
+ * ROFI Color theme
+ * Kanagawa Colorscheme
+ * Based on the Kanagawa color scheme.
+ * https://github.com/rebelot/kanagawa.nvim
+ */
+
+* {
+    /* Kanagawa dark (wave) colors */
+    kanagawa-sumiInk0:      #16161D;
+    kanagawa-sumiInk1:      #1F1F28;
+    kanagawa-sumiInk2:      #2A2A37;
+    kanagawa-fujiWhite:     #DCD7BA;
+    kanagawa-oldWhite:      #C8C093;
+    kanagawa-dragonRed:     #C34043;
+    kanagawa-samuraiRed:    #E46876;
+    kanagawa-carpYellow:    #C39043;
+    kanagawa-roninYellow:   #FF9E3B;
+    kanagawa-oniViolet:     #957FB8;
+    kanagawa-crystalBlue:   #769EAF;
+    kanagawa-waveBlue1:     #223249;
+    kanagawa-waveBlue2:     #2D4F67;
+    kanagawa-autumnGreen:   #799F73;
+
+    selected-normal-foreground:  @kanagawa-fujiWhite;
+    foreground:                  @kanagawa-oldWhite;
+    normal-foreground:           @foreground;
+    alternate-normal-background: transparent;
+    red:                         @kanagawa-dragonRed;
+    selected-urgent-foreground:  @kanagawa-fujiWhite;
+    blue:                        @kanagawa-crystalBlue;
+    urgent-foreground:           @kanagawa-samuraiRed;
+    alternate-urgent-background: transparent;
+    active-foreground:           @kanagawa-autumnGreen;
+    lightbg:                     @kanagawa-fujiWhite;
+    selected-active-foreground:  @kanagawa-autumnGreen;
+    alternate-active-background: transparent;
+    background:                  @kanagawa-sumiInk1;
+    bordercolor:                 @kanagawa-waveBlue1;
+    alternate-normal-foreground: @foreground;
+    normal-background:           transparent;
+    lightfg:                     @kanagawa-oldWhite;
+    selected-normal-background:  @kanagawa-waveBlue1;
+    border-color:                @kanagawa-oniViolet;
+    spacing:                     2;
+    separatorcolor:              @kanagawa-roninYellow;
+    urgent-background:           transparent;
+    selected-urgent-background:  @kanagawa-samuraiRed;
+    alternate-urgent-foreground: @urgent-foreground;
+    background-color:            transparent;
+    alternate-active-foreground: @active-foreground;
+    active-background:           transparent;
+    selected-active-background:  @kanagawa-waveBlue1;
+}
+
+window {
+    background-color: @background;
+    border:            1;
+    padding:           5;
+}
+mainbox {
+    border:  0;
+    padding: 0;
+}
+message {
+    border:         2px 0px 0px ;
+    border-color:   @separatorcolor;
+    padding:        1px ;
+}
+textbox {
+    text-color: @foreground;
+}
+listview {
+    fixed-height: 0;
+    border:         2px 0px 0px ;
+    border-color: @separatorcolor;
+    spacing:      2px ;
+    scrollbar:    true;
+    padding:      2px 0px 0px ;
+}
+element {
+    border:  0;
+    padding: 1px ;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+element.normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+element.normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+element.normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+}
+element.selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+}
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}
+scrollbar {
+    width:         4px ;
+    border:        0;
+    handle-width:  8px ;
+    padding:       0;
+}
+mode-switcher {
+    border:         2px 0px 0px ;
+    border-color: @separatorcolor;
+}
+button.selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+inputbar {
+    spacing:  0;
+    text-color: @normal-foreground;
+    padding:  1px ;
+}
+case-indicator {
+    spacing:  0;
+    text-color: @normal-foreground;
+}
+entry {
+    spacing:  0;
+    text-color: @normal-foreground;
+}
+prompt {
+    spacing:  0;
+    text-color: @normal-foreground;
+}
+inputbar {
+    children:  [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+textbox-prompt-colon {
+    expand:      false;
+    str:         ":";
+    margin:      0px 0.3em 0em 0em ;
+    text-color: @normal-foreground;
+}
