@@ -15,6 +15,10 @@ vim.keymap.set("n", "<leader>w", function()
   vim.notify("File saved", vim.log.levels.INFO)
 end, { desc = "Save file" })
 
+-- Scroll up and down half a page
+vim.keymap.set("n", "U", "<C-u>", { desc = "Scroll up half page" })
+vim.keymap.set("n", "D", "<C-d>", { desc = "Scroll down half page" })
+
 -- Map Ctrl+Backspace to Ctrl+w in normal mode
 vim.keymap.set("i", "<C-BS>", "<C-w>", { noremap = true, silent = true, desc = "Window command prefix" })
 vim.keymap.set("i", "<C-h>", "<C-w>", { noremap = true, silent = true, desc = "Window command prefix" })
