@@ -11,6 +11,10 @@ return {
           ["<C-BS>"] = { "<C-w>", desc = "Delete previous word" },
           ["<C-CR>"] = { "<Esc>o", desc = "Insert new line below from insert mode" },
         },
+        n = {
+          ["U"] = { "<C-u>", desc = "Scroll Up Half" },
+          ["D"] = { "<C-d>", desc = "Scroll Down Half" },
+        }
       },
     },
   },
