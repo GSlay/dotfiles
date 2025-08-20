@@ -3,9 +3,12 @@ return {
   ---@class PluginLspOpts
   opts = {
     servers = {
-      clangd = {
-        mason = false,
-      },
+      -- clangd = {
+      --   mason = false,
+      -- },
+      -- lua_ls = {
+      --   mason = false,
+      -- }
     },
   },
 }
