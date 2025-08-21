@@ -38,7 +38,7 @@ return {
         selection = {
           -- The manual strategy means you must press a key to confirm
           preselect = false,
-          auto_insert = false,
+          auto_insert = true,
         },
       },
     },
