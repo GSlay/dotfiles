@@ -1,0 +1,52 @@
+! Kanagawa Wave theme for Xterm
+! Based on the colors from the Kanagawa theme for Neovim
+
+
+XTerm*faceName: JetBrainsMono Nerd Font
+XTerm*faceSize: 16
+
+! Main colors
+XTerm*foreground:  #c8c093
+XTerm*background:  #1f1f28
+
+! Black
+XTerm*color0:  #1f1f28
+XTerm*color8:  #44415a
+
+! Red
+XTerm*color1:  #c84337
+XTerm*color9:  #e64a4d
+
+! Green
+XTerm*color2:  #6a9568
+XTerm*color10: #7c9f6b
+
+! Yellow
+XTerm*color3:  #d0944e
+XTerm*color11: #d27e99
+
+! Blue
+XTerm*color4:  #6c9d8c
+XTerm*color12: #7d96a7
+
+! Magenta
+XTerm*color5:  #c46565
+XTerm*color13: #c26189
+
+! Cyan
+XTerm*color6:  #779c8d
+XTerm*color14: #8aa9a1
+
+! White
+XTerm*color7:  #c8c093
+XTerm*color15: #d2c89f
+
+! Other settings (optional)
+! Uncomment these lines if you want a different look for bold text
+! Bold mode makes text a brighter version of the color
+!XTerm*colorBDMode: true
+!XTerm*colorITMode: true
+
+! Use a true-type font if desired
+!XTerm*faceName: Fira Code
+!XTerm*faceSize: 10
