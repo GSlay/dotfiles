@@ -35,7 +35,25 @@ return {
     end,
 
     config = function()
-      vim.cmd.colorscheme("kanagawa-wave")
+      -- vim.cmd.colorscheme("kanagawa-wave")
     end,
   },
+  -- add dracula
+  { "Mofiqul/dracula.nvim" },
+
+  -- Configure LazyVim to load dracula
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      -- colorscheme = "dracula",
+    },
+  },
+  {
+    "xero/evangelion.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("evangelion")
+    end,
+  }
 }
