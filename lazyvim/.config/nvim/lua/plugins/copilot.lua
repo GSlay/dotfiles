@@ -5,7 +5,7 @@ return {
       -- Tắt mapping mặc định của Tab để tránh xung đột với nvim-cmp
       vim.g.copilot_no_tab_map = true
       -- Thiết lập Ctrl + L ( <C-l> ) để accept ghost text
-      vim.keymap.set('i', '<C-l>', 'copilot#Accept("\\<CR>")', {
+      vim.keymap.set('i', '<CR>', 'copilot#Accept("\\<CR>")', {
         expr = true,
         replace_keycodes = false
       })
