@@ -10,14 +10,16 @@ vim.keymap.set("n", "<leader>o", function()
   vim.cmd("write")
   vim.notify("File saved", vim.log.levels.INFO)
 end, { desc = "Save file" })
+-- Thoát chế độ Terminal bằng C-q
+vim.keymap.set("t", "<C-q>", [[<C-\><C-n>]], { desc = "Thoát terminal mode" })
 -- vim.keymap.set("n", "<leader>w", function()
 --   vim.cmd("write")
 --   vim.notify("File saved", vim.log.levels.INFO)
 -- end, { desc = "Save file" })
 
 -- Scroll up and down half a page
-vim.keymap.set("n", "U", "<C-u>", { desc = "Scroll up half page" })
-vim.keymap.set("n", "D", "<C-d>", { desc = "Scroll down half page" })
+-- vim.keymap.set("n", "U", "<C-u>", { desc = "Scroll up half page" })
+-- vim.keymap.set("n", "D", "<C-d>", { desc = "Scroll down half page" })
 
 -- Map Ctrl+Backspace to Ctrl+w in normal mode
 vim.keymap.set("i", "<C-BS>", "<C-w>", { noremap = true, silent = true, desc = "Window command prefix" })
