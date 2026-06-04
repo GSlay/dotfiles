@@ -52,17 +52,19 @@ return {
     "xero/evangelion.nvim",
     lazy = false,
     priority = 1000,
-    opts = {
-      overrides = {
-        ["@operator"] = { fg = "#ff79c6", bold = true },
-        Operator = { fg = "#ff79c6", bold = true },
-        Delimiter = { fg = "#ff79c6", bold = true },
-        ["@punctuation.delimiter"] = { fg = "#f8f8f2" },  -- trắng nhạt, rõ ràng
-      }
-    },
-    config = function(_, opts)
-      require("evangelion").setup(opts)
+    config = function()
       -- vim.cmd.colorscheme("evangelion")
     end,
-  }
-          }
+  },
+  { "EdenEast/nightfox.nvim" }, -- lazy
+  { 'projekt0n/github-nvim-theme', name = 'github-theme' },
+  {
+    "catppuccin/nvim", 
+    name = "catppuccin", 
+    priority = 1000, 
+    lazy = false, -- Đổi từ true thành false ở đây
+    config = function()
+      vim.cmd.colorscheme("catppuccin-latte")
+    end,
+  },
+}
